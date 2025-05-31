@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - Plataforma de Cursos</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/components/sidebar.css">
+    <link rel="stylesheet" href="../css/components/header.css">
+    <link rel="stylesheet" href="../css/components/breadcrumb.css">
+    <link rel="stylesheet" href="../css/components/cards.css">
+    <link rel="stylesheet" href="../css/pages/perfil.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div id="sidebar-container"></div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="page-header">
+                <div class="breadcrumb">
+                    <span>Inicio</span>
+                    <span class="breadcrumb-separator">›</span>
+                    <span class="breadcrumb-current">Mi Perfil</span>
+                </div>
+                
+                <div class="header-actions">
+                    <button class="search-btn">🔍</button>
+                    <div class="notifications">
+                        <span class="notification-badge">3</span>
+                        🔔
+                    </div>
+                    <div class="user-menu">
+                        <span>Administrador Demo</span>
+                        <div class="user-avatar">👤</div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Profile Content -->
+            <div class="profile-container">
+                <!-- Profile Header -->
+                <section class="profile-header">
+                    <div class="profile-banner">
+                        <div class="banner-content">
+                            <div class="profile-picture">
+                                <img src="https://via.placeholder.com/120x120/6366F1/FFFFFF?text=AD" alt="Profile Picture" id="profile-img">
+                                <button class="change-picture-btn">📷</button>
+                            </div>
+                            <div class="profile-info">
+                                <h1 class="profile-name">Administrador Demo</h1>
+                                <p class="profile-title">Estudiante de UI/UX Design</p>
+                                <div class="profile-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">12</span>
+                                        <span class="stat-label">Cursos</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">156</span>
+                                        <span class="stat-label">Horas</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">8</span>
+                                        <span class="stat-label">Certificados</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-actions">
+                                <button class="btn-primary" id="edit-profile-btn">✏️ Editar Perfil</button>
+                                <button class="btn-secondary">📤 Compartir</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Profile Content Grid -->
+                <div class="profile-content">
+                    <!-- Left Column -->
+                    <div class="profile-main">
+                        <!-- About Section -->
+                        <section class="profile-section">
+                            <h2>Acerca de mí</h2>
+                            <div class="about-content">
+                                <p id="bio-text">Apasionado por el diseño UI/UX y la tecnología. Siempre buscando aprender nuevas herramientas y metodologías para crear mejores experiencias de usuario.</p>
+                                <button class="edit-bio-btn" id="edit-bio-btn">✏️ Editar</button>
+                            </div>
+                        </section>
+
+                        <!-- Skills Section -->
+                        <section class="profile-section">
+                            <h2>Habilidades</h2>
+                            <div class="skills-container">
+                                <div class="skill-item">
+                                    <span class="skill-name">UI Design</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">UX Research</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 70%"></div>
+                                    </div>
+                                    <span class="skill-level">70%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Figma</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Prototipado</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 75%"></div>
+                                    </div>
+                                    <span class="skill-level">75%</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Recent Activity -->
+                        <section class="profile-section">
+                            <h2>Actividad Reciente</h2>
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <div class="activity-icon">🏆</div>
+                                    <div class="activity-content">
+                                        <p class="activity-title">Certificado completado</p>
+                                        <p class="activity-description">UI/UX Designer Fundamentals</p>
+                                        <span class="activity-time">hace 2 días</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">📚</div>
+                                    <div class="activity-content">
+                                        <p class="activity-title">Curso iniciado</p>
+                                        <p class="activity-description">Advanced Prototyping Techniques</p>
+                                        <span class="activity-time">hace 1 semana</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">✅</div>
+                                    <div class="activity-content">
+                                        <p class="activity-title">Lección completada</p>
+                                        <p class="activity-description">Introduction to Design Systems</p>
+                                        <span class="activity-time">hace 1 semana</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Certificates -->
+                        <section class="profile-section">
+                            <h2>Certificados</h2>
+                            <div class="certificates-grid">
+                                <div class="certificate-card">
+                                    <div class="certificate-icon">🏆</div>
+                                    <h3>UI/UX Designer Fundamentals</h3>
+                                    <p>Completado el 15 de Diciembre, 2023</p>
+                                    <button class="btn-download">📥 Descargar</button>
+                                </div>
+                                <div class="certificate-card">
+                                    <div class="certificate-icon">🏆</div>
+                                    <h3>Figma Masterclass</h3>
+                                    <p>Completado el 8 de Noviembre, 2023</p>
+                                    <button class="btn-download">📥 Descargar</button>
+                                </div>
+                                <div class="certificate-card">
+                                    <div class="certificate-icon">🏆</div>
+                                    <h3>Design Systems Expert</h3>
+                                    <p>Completado el 22 de Octubre, 2023</p>
+                                    <button class="btn-download">📥 Descargar</button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Right Sidebar -->
+                    <div class="profile-sidebar">
+                        <!-- Current Courses -->
+                        <div class="sidebar-card">
+                            <h3>Cursos Actuales</h3>
+                            <div class="current-courses">
+                                <div class="course-item">
+                                    <div class="course-thumbnail">
+                                        <img src="https://via.placeholder.com/60x40/6366F1/FFFFFF?text=UX" alt="Course">
+                                    </div>
+                                    <div class="course-info">
+                                        <h4>UI/UX Designer</h4>
+                                        <div class="course-progress">
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 65%"></div>
+                                            </div>
+                                            <span>65%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-item">
+                                    <div class="course-thumbnail">
+                                        <img src="https://via.placeholder.com/60x40/EC4899/FFFFFF?text=JS" alt="Course">
+                                    </div>
+                                    <div class="course-info">
+                                        <h4>JavaScript Avanzado</h4>
+                                        <div class="course-progress">
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 30%"></div>
+                                            </div>
+                                            <span>30%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Learning Goals -->
+                        <div class="sidebar-card">
+                            <h3>Metas de Aprendizaje</h3>
+                            <div class="goals-list">
+                                <div class="goal-item">
+                                    <span class="goal-icon">🎯</span>
+                                    <span class="goal-text">Completar 3 cursos este mes</span>
+                                    <span class="goal-status completed">✅</span>
+                                </div>
+                                <div class="goal-item">
+                                    <span class="goal-icon">⏰</span>
+                                    <span class="goal-text">Estudiar 20 horas por semana</span>
+                                    <span class="goal-status in-progress">🔄</span>
+                                </div>
+                                <div class="goal-item">
+                                    <span class="goal-icon">🏆</span>
+                                    <span class="goal-text">Obtener certificación avanzada</span>
+                                    <span class="goal-status pending">⏳</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Study Streak -->
+                        <div class="sidebar-card">
+                            <h3>Racha de Estudio</h3>
+                            <div class="streak-info">
+                                <div class="streak-number">🔥 15</div>
+                                <p>días consecutivos</p>
+                                <div class="streak-calendar">
+                                    <div class="day active">L</div>
+                                    <div class="day active">M</div>
+                                    <div class="day active">X</div>
+                                    <div class="day active">J</div>
+                                    <div class="day active">V</div>
+                                    <div class="day">S</div>
+                                    <div class="day">D</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="sidebar-card">
+                            <h3>Información de Contacto</h3>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <span class="contact-icon">📧</span>
+                                    <span class="contact-text">admin@demo.com</span>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-icon">📍</span>
+                                    <span class="contact-text">Madrid, España</span>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-icon">🌐</span>
+                                    <span class="contact-text">linkedin.com/in/admin-demo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Edit Profile Modal -->
+    <div id="edit-profile-modal" class="modal">
+        <div class="modal-backdrop">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Editar Perfil</h2>
+                    <button class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="edit-profile-form">
+                        <div class="form-group">
+                            <label for="edit-name">Nombre completo</label>
+                            <input type="text" id="edit-name" value="Administrador Demo">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-title">Título profesional</label>
+                            <input type="text" id="edit-title" value="Estudiante de UI/UX Design">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-bio">Biografía</label>
+                            <textarea id="edit-bio" rows="4">Apasionado por el diseño UI/UX y la tecnología. Siempre buscando aprender nuevas herramientas y metodologías para crear mejores experiencias de usuario.</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-email">Email</label>
+                            <input type="email" id="edit-email" value="admin@demo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-location">Ubicación</label>
+                            <input type="text" id="edit-location" value="Madrid, España">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-linkedin">LinkedIn</label>
+                            <input type="text" id="edit-linkedin" value="linkedin.com/in/admin-demo">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-secondary" id="cancel-edit">Cancelar</button>
+                    <button type="submit" class="btn-primary" id="save-profile">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/components/sidebar.js"></script>
+    <script src="../js/components/breadcrumb.js"></script>
+    <script src="../js/pages/perfil.js"></script>
+</body>
+</html>
